@@ -50,7 +50,7 @@ function pide:update(setpoint, measurement)
 	end
 	
 	-- Derivative Term
-	self.differentiator = -1 * (2.0 * self.Kd * (measurement - self.prevMeasurement) + (2 * self.tau - self.tTime) * self.differentiator) / (2.0 * self.tau + tTime)
+	self.differentiator = -1 * (2.0 * self.Kd * (measurement - self.prevMeasurement) + (2 * self.tau - self.tTime) * self.differentiator) / (2.0 * self.tau + self.tTime)
 	
 	-- Compute output and apply limits
 	self.out = proportional + self.integrator + self.differentiator
