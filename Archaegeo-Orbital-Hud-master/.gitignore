@@ -1,0 +1,10 @@
+ArchHUD.min.lua
+ArchHUD.wrapped.conf
+ArchHUD.exports
+ArchHUD.extracted.lua
+ArchHUD.conf.version
+scripts/node_modules/**
+scripts/work/**
+src/du
+src/du/**
+log.txt
